@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Adding New Members &mdash; CCF  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Member RPC API" href="member_rpc_api.html" />
+    <link rel="prev" title="Common Governance Operations" href="common_member_operations.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CCF
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">CCF Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Member Governance</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="constitution.html">Constitution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proposals.html">Proposing and Voting for a Proposal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_network.html">Opening a Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common_member_operations.html">Common Governance Operations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Adding New Members</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#generating-member-keys-and-certificate">Generating Member Keys and Certificate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#registering-a-new-member">Registering a New Member</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#activating-a-new-member">Activating a New Member</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="member_rpc_api.html">Member RPC API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Writing CCF Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operators/index.html">Operating a Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../users/index.html">Using CCF Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design/index.html">Design</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CCF</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Member Governance</a> &raquo;</li>
+        
+      <li>Adding New Members</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/Microsoft/CCF/blob/master/sphinx/source/members/adding_member.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="adding-new-members">
+<h1>Adding New Members<a class="headerlink" href="#adding-new-members" title="Permalink to this headline">¶</a></h1>
+<p>It is possible for existing members to add new members to the consortium after a CCF network has been started.</p>
+<div class="section" id="generating-member-keys-and-certificate">
+<h2>Generating Member Keys and Certificate<a class="headerlink" href="#generating-member-keys-and-certificate" title="Permalink to this headline">¶</a></h2>
+<p>First, the identity and key share public and private key pairs of the new member should be created.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">keygenerator.sh</span></code> script can be used to generate the member’s certificate and associated private key as well as their key share public and private keys.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ keygenerator.sh --name<span class="o">=</span>member_name --gen-key-share
+-- Generating identity private key and certificate <span class="k">for</span> participant <span class="s2">&quot;member_name&quot;</span>...
+Identity curve: secp384r1
+Identity certificate generated at:   member_name_cert.pem <span class="o">(</span>to be registered in CCF<span class="o">)</span>
+Identity private key generated at:   member_name_privk.pem
+-- Generating key share pair <span class="k">for</span> participant <span class="s2">&quot;member_name&quot;</span>...
+Key share public key generated at:   member_name_kshare_pub.pem <span class="o">(</span>to be registered in CCF<span class="o">)</span>
+Key share private key generated at:  member_name_kshare_priv.pem
+</pre></div>
+</div>
+<p>The member’s private keys (e.g. <code class="docutils literal notranslate"><span class="pre">member_name_privk.pem</span></code> and <code class="docutils literal notranslate"><span class="pre">member_name_kshare_priv.pem</span></code>) should be stored on a trusted device while the certificate (e.g. <code class="docutils literal notranslate"><span class="pre">member_name_cert.pem</span></code>) and public key share (e.g. <code class="docutils literal notranslate"><span class="pre">member_name_kshare_pub.pem</span></code>) should be registered in CCF by members.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See <a class="reference internal" href="../developers/cryptography.html#algorithms-and-curves"><span class="std std-ref">Algorithms and Curves</span></a> for the list of supported cryptographic curves for member identity.</p>
+</div>
+</div>
+<div class="section" id="registering-a-new-member">
+<h2>Registering a New Member<a class="headerlink" href="#registering-a-new-member" title="Permalink to this headline">¶</a></h2>
+<p>Once the new member’s keys and certificate have been generated, the existing consortium should register the new member public information in CCF, following the usual propose and vote procedure.</p>
+<p>The <a class="reference internal" href="proposals.html#submitting-a-new-proposal"><span class="std std-ref">Submitting a New Proposal</span></a> section describes the steps that members should follow to register a new member.</p>
+</div>
+<div class="section" id="activating-a-new-member">
+<h2>Activating a New Member<a class="headerlink" href="#activating-a-new-member" title="Permalink to this headline">¶</a></h2>
+<p>A new member who gets registered in CCF is not yet able to participate in governance operations. To do so, the new member should first acknowledge that they are satisfied with the state of the service (for example, after auditing the current constitution and the nodes currently trusted).</p>
+<p>First, the new member should update and retrieve the latest state digest via the <code class="docutils literal notranslate"><span class="pre">members/updateAckStateDigest</span></code> command. In doing so, the new member confirms that they are satisfied with the state of the service.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl https://&lt;ccf-node-address&gt;/members/updateAckStateDigest  --cacert networkcert.pem --key new_member_privk.pem --cert new_member_cert.pem
+<span class="o">{</span>
+    <span class="s2">&quot;state_digest&quot;</span>: &lt;...&gt;
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Then, the new member should sign the state digest returned by the <code class="docutils literal notranslate"><span class="pre">members/updateAckStateDigest</span></code> via the <code class="docutils literal notranslate"><span class="pre">members/ack</span></code> command, using the <code class="docutils literal notranslate"><span class="pre">scurl.sh</span></code> utility:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./scurl.sh https://&lt;ccf-node-address&gt;/members/ack  --cacert networkcert.pem --key new_member_privk.pem --cert new_member_cert.pem --header <span class="s2">&quot;Content-Type: application/json&quot;</span> --data-binary <span class="s1">&#39;{&quot;state_digest&quot;: &lt;...&gt;}&#39;</span>
+<span class="nb">true</span>
+</pre></div>
+</div>
+<p>Once the command completes, the new member becomes active and can take part in governance operations (e.g. creating a new proposal or voting for an existing one).</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="member_rpc_api.html" class="btn btn-neutral float-right" title="Member RPC API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="common_member_operations.html" class="btn btn-neutral float-left" title="Common Governance Operations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Microsoft Research
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

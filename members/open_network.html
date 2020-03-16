@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Opening a Network &mdash; CCF  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Common Governance Operations" href="common_member_operations.html" />
+    <link rel="prev" title="Proposing and Voting for a Proposal" href="proposals.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CCF
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts.html">CCF Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/index.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Member Governance</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="constitution.html">Constitution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proposals.html">Proposing and Voting for a Proposal</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Opening a Network</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-users">Adding Users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#registering-the-lua-application">Registering the Lua Application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#opening-the-network">Opening the Network</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="common_member_operations.html">Common Governance Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_member.html">Adding New Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="member_rpc_api.html">Member RPC API</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../developers/index.html">Writing CCF Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../operators/index.html">Operating a Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../users/index.html">Using CCF Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design/index.html">Design</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CCF</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Member Governance</a> &raquo;</li>
+        
+      <li>Opening a Network</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/Microsoft/CCF/blob/master/sphinx/source/members/open_network.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="opening-a-network">
+<h1>Opening a Network<a class="headerlink" href="#opening-a-network" title="Permalink to this headline">¶</a></h1>
+<p>This sections assumes that a set of nodes has already been started by <a class="reference internal" href="../glossary.html#term-operators"><span class="xref std std-term">operators</span></a>. See <a class="reference internal" href="../operators/start_network.html#starting-a-new-network"><span class="std std-ref">Starting a New Network</span></a>.</p>
+<div class="section" id="adding-users">
+<h2>Adding Users<a class="headerlink" href="#adding-users" title="Permalink to this headline">¶</a></h2>
+<p>Once a CCF network is successfully started and an acceptable number of nodes have joined, members should vote to open the network to <a class="reference internal" href="../glossary.html#term-users"><span class="xref std std-term">users</span></a>. First, <a class="reference internal" href="../users/index.html#using-ccf-applications"><span class="std std-ref">the identities of trusted users should be generated</span></a>.</p>
+<p>Then, the certificates of trusted users should be registered in CCF via the member governance interface. For example, the first member may decide to make a proposal to add a new user (here, <code class="docutils literal notranslate"><span class="pre">user_cert</span></code> is the PEM certificate of the user – see <a class="reference internal" href="../developers/cryptography.html#cryptography"><span class="std std-ref">Cryptography</span></a> for a list of supported algorithms):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat add_user.json
+<span class="o">{</span>
+    <span class="s2">&quot;parameter&quot;</span>: <span class="o">[</span>&lt;cert of proposed new user&gt;<span class="o">]</span>,
+    <span class="s2">&quot;script&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;text&quot;</span>: <span class="s2">&quot;tables, user_cert = ...; return Calls:call(\&quot;new_user\&quot;, user_cert)&quot;</span>
+<span class="o">}</span>
+
+$ ./scurl.sh https://&lt;ccf-node-address&gt;/members/propose --cacert network_cert --key member0_privk --cert member0_cert --data-binary @add_user.json -H <span class="s2">&quot;content-type: application/json&quot;</span>
+<span class="o">{</span>
+    <span class="s2">&quot;completed&quot;</span>: false,
+    <span class="s2">&quot;id&quot;</span>: <span class="m">5</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Other members are then allowed to vote for the proposal, using the proposal id returned to the proposer member (here <code class="docutils literal notranslate"><span class="pre">5</span></code>, as per <code class="docutils literal notranslate"><span class="pre">&quot;result&quot;:{&quot;completed&quot;:false,&quot;id&quot;:5}</span></code>). They may submit an unconditional approval, or their vote may query the current state and proposal. These votes <cite>must</cite> be signed.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat vote_accept.json
+<span class="o">{</span>
+    <span class="s2">&quot;ballot&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;text&quot;</span>: <span class="s2">&quot;return true&quot;</span>
+    <span class="o">}</span>,
+    <span class="s2">&quot;id&quot;</span>: <span class="m">5</span>
+<span class="o">}</span>
+
+$ ./scurl.sh https://&lt;ccf-node-address&gt;/members/vote --cacert network_cert --key member1_privk --cert member1_cert --data-binary @vote_accept.json -H <span class="s2">&quot;content-type: application/json&quot;</span>
+<span class="nb">false</span>
+
+$ cat vote_conditional.json
+<span class="o">{</span>
+    <span class="s2">&quot;ballot&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;text&quot;</span>: <span class="s2">&quot;tables, calls = ...; return (#calls == 1 and calls[1].func == \&quot;new_user\&quot;)&quot;</span>
+    <span class="o">}</span>,
+    <span class="s2">&quot;id&quot;</span>: <span class="m">5</span>
+<span class="o">}</span>
+
+$ ./scurl.sh https://&lt;ccf-node-address&gt;/members/vote --cacert network_cert --key member2_privk --cert member2_cert --data-binary @vote_conditional.json -H <span class="s2">&quot;content-type: application/json&quot;</span>
+<span class="nb">true</span>
+</pre></div>
+</div>
+<p>The user is successfully added once a the proposal has received enough votes under the rules of the <a class="reference internal" href="../glossary.html#term-constitution"><span class="xref std std-term">constitution</span></a> (indicated by the response body <code class="docutils literal notranslate"><span class="pre">true</span></code>).</p>
+<p>The user can then make user RPCs, for example <code class="docutils literal notranslate"><span class="pre">whoAmI</span></code> to retrieve the unique caller ID assigned to them by CCF:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ curl https://&lt;ccf-node-address&gt;/users/whoAmI --cacert network_cert --key new_user_privk --cert new_user_cert
+<span class="o">{</span>
+    <span class="s2">&quot;caller_id&quot;</span>: <span class="m">4</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>For each user CCF also stores arbitrary user-data in a JSON object, which can only be written to by members, subject to the standard proposal-vote governance mechanism. This lets members define initial metadata for certain users; for example to grant specific privileges, associate a human-readable name, or categorise the users. This user-data can then be read (but not written) by user-facing apps.</p>
+</div>
+<div class="section" id="registering-the-lua-application">
+<h2>Registering the Lua Application<a class="headerlink" href="#registering-the-lua-application" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section only applies when deploying Lua applications (i.e. using the <code class="docutils literal notranslate"><span class="pre">libluageneric.enclave.so.signed</span></code> enclave library). For C++ applications, this step should be skipped.</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat set_lua_app.json
+<span class="o">{</span>
+    <span class="s2">&quot;parameter&quot;</span>: <span class="s2">&quot;&lt;proposed lua app&gt;&quot;</span>,
+    <span class="s2">&quot;script&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;text&quot;</span>: <span class="s2">&quot;tables, app = ...; return Calls:call(\&quot;set_lua_app\&quot;, app)&quot;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+$ ./scurl.sh https://&lt;ccf-node-address&gt;/members/propose --cacert network_cert --key member0_privk --cert member0_cert --data-binary @set_lua_app.json -H <span class="s2">&quot;content-type: application/json&quot;</span>
+<span class="o">{</span>
+    <span class="s2">&quot;completed&quot;</span>: false,
+    <span class="s2">&quot;id&quot;</span>: <span class="m">1</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Other members are then able to vote for the proposal using the returned proposal id (here <code class="docutils literal notranslate"><span class="pre">1</span></code>, as per <code class="docutils literal notranslate"><span class="pre">&quot;result&quot;:{&quot;completed&quot;:false,&quot;id&quot;:1}</span></code>).</p>
+<p>The Lua application is successfully registered once the proposal has received enough votes under the rules of the <a class="reference internal" href="../glossary.html#term-constitution"><span class="xref std std-term">constitution</span></a>.</p>
+</div>
+<div class="section" id="opening-the-network">
+<h2>Opening the Network<a class="headerlink" href="#opening-the-network" title="Permalink to this headline">¶</a></h2>
+<p>Once users are added to the opening network, members should decide to make a proposal to open the network:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat open_network.json
+<span class="o">{</span>
+    <span class="s2">&quot;script&quot;</span>: <span class="o">{</span>
+        <span class="s2">&quot;text&quot;</span>: <span class="s2">&quot;return Calls:call(\&quot;open_network\&quot;)&quot;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+$ ./scurl.sh https://&lt;ccf-node-address&gt;/members/propose --cacert network_cert --key member0_privk --cert member0_cert --data-binary @open_network.json -H <span class="s2">&quot;content-type: application/json&quot;</span>
+<span class="o">{</span>
+    <span class="s2">&quot;completed&quot;</span>: false,
+    <span class="s2">&quot;id&quot;</span>: <span class="m">2</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Other members are then able to vote for the proposal using the returned proposal id (here <code class="docutils literal notranslate"><span class="pre">2</span></code>, as per <code class="docutils literal notranslate"><span class="pre">&quot;result&quot;:{&quot;completed&quot;:false,&quot;id&quot;:2}</span></code>).</p>
+<p>Once the proposal has received enough votes under the rules of the <a class="reference internal" href="../glossary.html#term-constitution"><span class="xref std std-term">constitution</span></a> (<code class="docutils literal notranslate"><span class="pre">&quot;result&quot;:true</span></code>), the network is opened to users (see <a class="reference internal" href="../developers/example.html#example-application"><span class="std std-ref">Example Application</span></a> for a simple business logic and transactions). It is only then that users are able to execute transactions on the business logic defined by the enclave file (<code class="docutils literal notranslate"><span class="pre">--enclave-file</span></code> option to <code class="docutils literal notranslate"><span class="pre">cchost</span></code>).</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="common_member_operations.html" class="btn btn-neutral float-right" title="Common Governance Operations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="proposals.html" class="btn btn-neutral float-left" title="Proposing and Voting for a Proposal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Microsoft Research
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
